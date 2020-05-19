@@ -3,8 +3,15 @@ import React from 'react'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+import continousIntegrationImage from '../images/continous_integration.jpeg'
+import SecondPage from '../pages/page-2'
 
 class Main extends React.Component {
+  async openBlogArticle() {
+    await this.props.setIsArticleVisible(false)
+    await this.props.onOpenArticle('integration')
+  }
+
   render() {
     let close = (
       <div
@@ -167,6 +174,33 @@ class Main extends React.Component {
           </ul>
           {close}
         </article>
+        <article
+          id="blog"
+          className={`${this.props.article === 'blog' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Blog</h2>
+          <h3>
+            From Release-All-Nighters to Continuous Integration — A True Story
+          </h3>
+          <span onClick={() => {
+            this.openBlogArticle()
+          }} className="image main">
+            <img src={continousIntegrationImage} alt="" />
+          </span>
+          {close}
+        </article>
+        <article
+          id="integration"
+          className={`${this.props.article === 'integration' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <SecondPage />
+        </article>
       </div>
     )
   }
@@ -177,7 +211,9 @@ Main.propTypes = {
   article: PropTypes.string,
   articleTimeout: PropTypes.bool,
   onCloseArticle: PropTypes.func,
+  onOpenArticle: PropTypes.func,
   timeout: PropTypes.bool,
+  setIsArticleVisible: PropTypes.func,
   setWrapperRef: PropTypes.func.isRequired,
 }
 
