@@ -4,7 +4,7 @@ import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 import continousIntegrationImage from '../images/continous_integration.jpeg'
-import SecondPage from '../pages/page-2'
+import ContinuousIntegration from '../blogs/continuousIntegration'
 
 class Main extends React.Component {
   async openBlogArticle() {
@@ -199,7 +199,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <SecondPage />
+          <ContinuousIntegration />
         </article>
       </div>
     )
