@@ -10,11 +10,9 @@ const Header = props => (
       <div className="inner">
         <h1>Jesse "A Body" Einfalt</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
+          Energetic and dependable Software Developer who wants to
           <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          continually learn, contribute and build forward-looking software
         </p>
       </div>
     </div>
@@ -41,19 +39,19 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('about')
+              props.onOpenArticle('blog')
             }}
           >
-            About
+            Blog
           </button>
         </li>
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('blog')
+              props.onOpenArticle('contact')
             }}
           >
-            Blog
+            Contact
           </button>
         </li>
       </ul>
