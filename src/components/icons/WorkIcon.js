@@ -1,8 +1,8 @@
 import React from 'react'
 
 const WorkIcon = () => (
-  <div className="logo">
-    <span className="icon fa-cog"></span>
+  <div >
+    <span className="icon fa-briefcase"></span>
   </div>
 );
 

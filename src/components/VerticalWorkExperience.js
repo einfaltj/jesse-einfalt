@@ -6,27 +6,52 @@ import {
 import 'react-vertical-timeline-component/style.min.css'
 import WorkIcon from './icons/WorkIcon'
 
+const finalIconStyle = {
+  background: 'rgb(27, 31, 34)',
+  color: '#fff',
+  paddingLeft: '12px',
+  paddingTop: '7px',
+}
+
 const VerticalWorkExperience = () => (
-  <VerticalTimeline>
+  <VerticalTimeline layout="1-column">
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-      contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-      date="2011 - present"
-      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+      contentStyle={{ background: 'rgb(27, 31, 34, 0)'}}
+      contentArrowStyle={{ borderRight: '7px solid  rgb(255,255,255)' }}
+      date="03/2018 - 07/2019"
+      iconStyle={finalIconStyle}
       icon={<WorkIcon />}
     >
-      <h3 className="vertical-timeline-element-title">Creative Director</h3>
-      <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+      <h3 className="vertical-timeline-element-title">Software Developer</h3>
+      <h4 className="vertical-timeline-element-subtitle">
+        Church Community Builder, Colorado Springs
+      </h4>
       <p>
-        Creative Direction, User Experience, Visual Design, Project Management,
-        Team Leading
+        <ul>
+          &#8226; Software team lead of 9 developers integrating a new payment
+          platform which will process 100s of millions in payments per year
+        </ul>
+        <ul>
+          &#8226; Developing large CRM suite in React and React-Native with a
+          RESTful API built on PHP and MySQL
+        </ul>
+        <ul>
+          &#8226; Became the owner of company's Test Suite to ensure
+          reliability, speed and coverage
+        </ul>
+        <ul>
+          &#8226; Implemented Behat/Mink end to end tests to replace legacy E2E
+          suite. This enabled PM team to have insight into test coverage using
+          business language gherkin
+        </ul>
       </p>
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
+      contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
       date="2010 - 2011"
-      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+      iconStyle={finalIconStyle}
       icon={<WorkIcon />}
     >
       <h3 className="vertical-timeline-element-title">Art Director</h3>
@@ -38,6 +63,7 @@ const VerticalWorkExperience = () => (
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
+      contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
       date="2008 - 2010"
       iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
       icon={<WorkIcon />}
