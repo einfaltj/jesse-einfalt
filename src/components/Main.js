@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 import continousIntegrationImage from '../images/continous_integration.jpeg'
 import ContinuousIntegration from '../blogs/continuousIntegration'
@@ -20,6 +19,11 @@ class Main extends React.Component {
         onClick={() => {
           this.props.onCloseArticle()
         }}
+        onKeyDown={() => {
+          this.props.onCloseArticle()
+        }}
+        role="button"
+        tabIndex={0}
       ></div>
     )
 
@@ -71,7 +75,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Work Experience</h2>
-          <VerticalWorkExperience/>
+          <VerticalWorkExperience />
           {close}
         </article>
 
@@ -169,9 +173,17 @@ class Main extends React.Component {
           <h3>
             From Release-All-Nighters to Continuous Integration — A True Story
           </h3>
-          <span onClick={() => {
-            this.openBlogArticle()
-          }} className="image main">
+          <span
+            onClick={() => {
+              this.openBlogArticle()
+            }}
+            onKeyDown={() => {
+              this.openBlogArticle()
+            }}
+            role="button"
+            tabIndex={0}
+            className="image main"
+          >
             <img src={continousIntegrationImage} alt="" />
           </span>
           {close}
