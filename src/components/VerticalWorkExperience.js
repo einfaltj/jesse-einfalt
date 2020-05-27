@@ -17,7 +17,7 @@ const VerticalWorkExperience = () => (
   <VerticalTimeline layout="1-column">
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: 'rgb(27, 31, 34, 0)'}}
+      contentStyle={{ background: 'rgb(27, 31, 34, 0)', paddingTop: '0px'}}
       contentArrowStyle={{ borderRight: '7px solid  rgb(255,255,255)' }}
       date="03/2018 - 07/2019"
       iconStyle={finalIconStyle}
