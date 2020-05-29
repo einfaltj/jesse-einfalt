@@ -1,0 +1,3 @@
+Install TestCafe and write some basic E2E Tests
+Add a pre-Commit hook that runs the tests on each commit
+Write simple Github Action that runs the E2E tests on every push 
