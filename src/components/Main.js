@@ -39,9 +39,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Intro</h2>
-          <span className="image main">
-            {/* <img src={pic01} alt="" /> */}
-          </span>
+          <span className="image main">{/* <img src={pic01} alt="" /> */}</span>
           <p>
             Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
             aliquam facilisis ante interdum congue. Integer mollis, nisl amet
@@ -85,9 +83,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">About</h2>
-          <span className="image main">
-            {/* <img src={pic03} alt="" /> */}
-          </span>
+          <span className="image main">{/* <img src={pic03} alt="" /> */}</span>
           <p>
             Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
             eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
@@ -173,7 +169,9 @@ class Main extends React.Component {
           </h3>
           <span
             onClick={() => {
-              this.openBlogArticle()
+              // this.openBlogArticle()
+              window.open('/BlogPost', '_blank');
+              window.focus();
             }}
             onKeyDown={() => {
               this.openBlogArticle()
