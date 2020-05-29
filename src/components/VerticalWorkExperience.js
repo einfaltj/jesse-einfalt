@@ -13,12 +13,55 @@ const finalIconStyle = {
   paddingTop: '7px',
 }
 
+const finalContentStyle = {
+  background: 'rgb(27, 31, 34, 0)',
+  paddingTop: '0px',
+}
+
+const finalArrowStyle = {
+  borderRight: '7px solid  rgb(255,255,255)',
+}
+
 const VerticalWorkExperience = () => (
   <VerticalTimeline layout="1-column">
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: 'rgb(27, 31, 34, 0)', paddingTop: '0px'}}
-      contentArrowStyle={{ borderRight: '7px solid  rgb(255,255,255)' }}
+      contentStyle={finalContentStyle}
+      contentArrowStyle={finalArrowStyle}
+      date="07/2019 - Present"
+      iconStyle={finalIconStyle}
+      icon={<WorkIcon />}
+    >
+      <h3 className="vertical-timeline-element-title">
+        Software Quality Engineering Manager
+      </h3>
+      <h4 className="vertical-timeline-element-subtitle">
+        Quantum Metric, Monument
+      </h4>
+      <p>
+        <ul>
+          &#8226; Stood up E2E test suite which allowed both Developers and
+          Automation Engineers to write tests in Typescript against the UI.
+          Hooked test suite into CI/CD pipeline.
+        </ul>
+        <ul>
+          &#8226; Wrapped critical functionality (IE Login, data aggregation
+          layer) in unit tests
+        </ul>
+        <ul>
+          &#8226; Formed QA department which consists of both Automated
+          Engineers and Manual Testers
+        </ul>
+        <ul>
+          &#8226; Worked with Colorado College, Flatiron and General Assemblies
+          to form internship opportunities within the Manual Testing role.
+        </ul>
+      </p>
+    </VerticalTimelineElement>
+    <VerticalTimelineElement
+      className="vertical-timeline-element--work"
+      contentStyle={finalContentStyle}
+      contentArrowStyle={finalArrowStyle}
       date="03/2018 - 07/2019"
       iconStyle={finalIconStyle}
       icon={<WorkIcon />}
@@ -49,79 +92,87 @@ const VerticalWorkExperience = () => (
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-      date="2010 - 2011"
+      contentStyle={finalContentStyle}
+      contentArrowStyle={finalArrowStyle}
+      date="07/2017 - 03/2018"
       iconStyle={finalIconStyle}
       icon={<WorkIcon />}
     >
-      <h3 className="vertical-timeline-element-title">Art Director</h3>
-      <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+      <h3 className="vertical-timeline-element-title">
+        Test Automation Developer
+      </h3>
+      <h4 className="vertical-timeline-element-subtitle">
+        Church Community Builder, Colorado Springs
+      </h4>
       <p>
-        Creative Direction, User Experience, Visual Design, SEO, Online
-        Marketing
+        <ul>
+          &#8226; Primary automated tester for the mobile team which included
+          iOS and Android apps
+        </ul>
+        <ul>
+          &#8226; Wrote automated tests, manually tested and shipped responsive
+          forms with payments which now process over 2 million dollars weekly
+        </ul>
+        <ul>
+          &#8226; Wrote Behat integration tests for server side code and
+          Cucumber end to end tests for the client side code
+        </ul>
       </p>
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-      date="2008 - 2010"
-      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+      contentStyle={finalContentStyle}
+      contentArrowStyle={finalArrowStyle}
+      date="04/2016 - 07/2017"
+      iconStyle={finalIconStyle}
       icon={<WorkIcon />}
     >
-      <h3 className="vertical-timeline-element-title">Web Designer</h3>
-      <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-      <p>User Experience, Visual Design</p>
+      <h3 className="vertical-timeline-element-title">Product Owner</h3>
+      <h4 className="vertical-timeline-element-subtitle">
+        Church Community Builder, Colorado Springs
+      </h4>
+      <p>
+        <ul>&#8226; Managed the Give Team as the Product Owner/Scrum Master</ul>
+        <ul>
+          &#8226; Primary project manager when CCB became PCI Level 1 compliant
+        </ul>
+        <ul>
+          &#8226; Successfully rolled out CCB's 2-way merchant integration with
+          Pushpay which has over 950 active churches
+        </ul>
+        <ul>&#8226; Oversaw the creation of a new mobile giving experience</ul>
+      </p>
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      date="2006 - 2008"
-      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-      icon={<WorkIcon />}
-    >
-      <h3 className="vertical-timeline-element-title">Web Designer</h3>
-      <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-      <p>User Experience, Visual Design</p>
-    </VerticalTimelineElement>
-    <VerticalTimelineElement
-      className="vertical-timeline-element--education"
-      date="April 2013"
-      iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+      contentStyle={finalContentStyle}
+      contentArrowStyle={finalArrowStyle}
+      date="12/2014 - 04/2016"
+      iconStyle={finalIconStyle}
       icon={<WorkIcon />}
     >
       <h3 className="vertical-timeline-element-title">
-        Content Marketing for Web, Mobile and Social Media
+        Tier III Technical Support
       </h3>
-      <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-      <p>Strategy, Social Media</p>
+      <h4 className="vertical-timeline-element-subtitle">
+        Church Community Builder, Colorado Springs
+      </h4>
+      <p>
+        <ul>
+          &#8226; Triaged API integration, financial, and bug case issues for
+          both churches and preferred vendors
+        </ul>
+        <ul>
+          &#8226;As software bugs were found, worked with developers to create
+          bug cases and inquiries that were easy to reproduce and then helped in
+          the prioritization of those bugs
+        </ul>
+        <ul>
+          &#8226; Performed data services for churches that ranged from
+          recovering accidentally deleted data to mass alterations of data
+        </ul>
+      </p>
     </VerticalTimelineElement>
-    <VerticalTimelineElement
-      className="vertical-timeline-element--education"
-      date="November 2012"
-      iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-      icon={<WorkIcon />}
-    >
-      <h3 className="vertical-timeline-element-title">
-        Agile Development Scrum Master
-      </h3>
-      <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-      <p>Creative Direction, User Experience, Visual Design</p>
-    </VerticalTimelineElement>
-    <VerticalTimelineElement
-      className="vertical-timeline-element--education"
-      date="2002 - 2006"
-      iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-      icon={<WorkIcon />}
-    >
-      <h3 className="vertical-timeline-element-title">
-        Bachelor of Science in Interactive Digital Media Visual Imaging
-      </h3>
-      <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-      <p>Creative Direction, Visual Design</p>
-    </VerticalTimelineElement>
-    <VerticalTimelineElement
-      iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-      icon={<WorkIcon />}
-    />
   </VerticalTimeline>
 )
 
