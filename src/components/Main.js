@@ -169,12 +169,12 @@ class Main extends React.Component {
           </h3>
           <span
             onClick={() => {
-              // this.openBlogArticle()
-              window.open('/BlogPost', '_blank');
+              window.open('/ContinuousIntegration', '_blank');
               window.focus();
             }}
             onKeyDown={() => {
-              this.openBlogArticle()
+              window.open('/ContinuousIntegration', '_blank');
+              window.focus();
             }}
             role="button"
             tabIndex={0}

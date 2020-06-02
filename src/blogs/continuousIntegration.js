@@ -2,9 +2,11 @@ import React from 'react'
 
 import continousIntegrationImage from '../images/continous_integration.jpeg'
 import Layout from '../components/layout'
+import BackLinkWebsite from '../components/BackLinkWebsite'
 
 const ContinuousIntegration = () => (
   <Layout>
+    <BackLinkWebsite/>
     <h2>From Release-All-Nighters to Continuous Integration</h2>
     <h2>— A True Story</h2>
     <span className="image main">
