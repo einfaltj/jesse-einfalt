@@ -35,7 +35,7 @@ const VerticalWorkExperience = () => (
       <h3 className="vertical-timeline-element-title">
         Software Quality Engineering Manager
       </h3>
-      <h4 className="vertical-timeline-element-subtitle">
+      <h4 style={{ paddingBottom: '16px' }} className="vertical-timeline-element-subtitle">
         Quantum Metric, Monument
       </h4>
       <div>
@@ -67,7 +67,7 @@ const VerticalWorkExperience = () => (
       icon={<WorkIcon />}
     >
       <h3 className="vertical-timeline-element-title">Software Developer</h3>
-      <h4 className="vertical-timeline-element-subtitle">
+      <h4 style={{ paddingBottom: '16px' }} className="vertical-timeline-element-subtitle">
         Church Community Builder, Colorado Springs
       </h4>
       <div>
@@ -101,7 +101,7 @@ const VerticalWorkExperience = () => (
       <h3 className="vertical-timeline-element-title">
         Test Automation Developer
       </h3>
-      <h4 className="vertical-timeline-element-subtitle">
+      <h4 style={{ paddingBottom: '16px' }} className="vertical-timeline-element-subtitle">
         Church Community Builder, Colorado Springs
       </h4>
       <div>
@@ -128,7 +128,7 @@ const VerticalWorkExperience = () => (
       icon={<WorkIcon />}
     >
       <h3 className="vertical-timeline-element-title">Product Owner</h3>
-      <h4 className="vertical-timeline-element-subtitle">
+      <h4 style={{ paddingBottom: '16px' }} className="vertical-timeline-element-subtitle">
         Church Community Builder, Colorado Springs
       </h4>
       <div>
@@ -154,7 +154,7 @@ const VerticalWorkExperience = () => (
       <h3 className="vertical-timeline-element-title">
         Tier III Technical Support
       </h3>
-      <h4 className="vertical-timeline-element-subtitle">
+      <h4 style={{ paddingBottom: '16px' }} className="vertical-timeline-element-subtitle">
         Church Community Builder, Colorado Springs
       </h4>
       <div>
