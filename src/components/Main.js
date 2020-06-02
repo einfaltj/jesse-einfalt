@@ -3,7 +3,7 @@ import React from 'react'
 import continousIntegrationImage from '../images/continous_integration.jpeg'
 import ContinuousIntegration from '../blogs/continuousIntegration'
 import VerticalWorkExperience from './VerticalWorkExperience'
-import Contact from './Contact'
+import ContactIcons from './ContactIcons'
 
 class Main extends React.Component {
   async openBlogArticle() {
@@ -104,7 +104,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <Contact/>
+          <ContactIcons/>
           {close}
         </article>
         <article
