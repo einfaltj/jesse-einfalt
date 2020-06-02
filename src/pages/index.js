@@ -41,7 +41,6 @@ class IndexPage extends React.Component {
   }
 
   handleOpenArticle(article) {
-    console.log("handleOpen", this.state)
     this.setState({
       isArticleVisible: !this.state.isArticleVisible,
       article,

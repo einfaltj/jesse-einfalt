@@ -12,6 +12,7 @@ const BackLinkWebsite = () => (
       window.focus()
     }}
     role="button"
+    tabIndex={0}
   >
     <span className="icon fa-arrow-left"></span>
     <h4 style={{ paddingLeft: '12px', paddingTop: '4px' }}>

@@ -38,7 +38,7 @@ const VerticalWorkExperience = () => (
       <h4 className="vertical-timeline-element-subtitle">
         Quantum Metric, Monument
       </h4>
-      <p>
+      <div>
         <ul>
           &#8226; Stood up E2E test suite which allowed both Developers and
           Automation Engineers to write tests in Typescript against the UI.
@@ -56,7 +56,7 @@ const VerticalWorkExperience = () => (
           &#8226; Worked with Colorado College, Flatiron and General Assemblies
           to form internship opportunities within the Manual Testing role.
         </ul>
-      </p>
+      </div>
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
@@ -70,7 +70,7 @@ const VerticalWorkExperience = () => (
       <h4 className="vertical-timeline-element-subtitle">
         Church Community Builder, Colorado Springs
       </h4>
-      <p>
+      <div>
         <ul>
           &#8226; Software team lead of 9 developers integrating a new payment
           platform which will process 100s of millions in payments per year
@@ -88,7 +88,7 @@ const VerticalWorkExperience = () => (
           suite. This enabled PM team to have insight into test coverage using
           business language gherkin
         </ul>
-      </p>
+      </div>
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
@@ -104,7 +104,7 @@ const VerticalWorkExperience = () => (
       <h4 className="vertical-timeline-element-subtitle">
         Church Community Builder, Colorado Springs
       </h4>
-      <p>
+      <div>
         <ul>
           &#8226; Primary automated tester for the mobile team which included
           iOS and Android apps
@@ -117,7 +117,7 @@ const VerticalWorkExperience = () => (
           &#8226; Wrote Behat integration tests for server side code and
           Cucumber end to end tests for the client side code
         </ul>
-      </p>
+      </div>
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
@@ -131,7 +131,7 @@ const VerticalWorkExperience = () => (
       <h4 className="vertical-timeline-element-subtitle">
         Church Community Builder, Colorado Springs
       </h4>
-      <p>
+      <div>
         <ul>&#8226; Managed the Give Team as the Product Owner/Scrum Master</ul>
         <ul>
           &#8226; Primary project manager when CCB became PCI Level 1 compliant
@@ -141,7 +141,7 @@ const VerticalWorkExperience = () => (
           Pushpay which has over 950 active churches
         </ul>
         <ul>&#8226; Oversaw the creation of a new mobile giving experience</ul>
-      </p>
+      </div>
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
@@ -157,7 +157,7 @@ const VerticalWorkExperience = () => (
       <h4 className="vertical-timeline-element-subtitle">
         Church Community Builder, Colorado Springs
       </h4>
-      <p>
+      <div>
         <ul>
           &#8226; Triaged API integration, financial, and bug case issues for
           both churches and preferred vendors
@@ -171,7 +171,7 @@ const VerticalWorkExperience = () => (
           &#8226; Performed data services for churches that ranged from
           recovering accidentally deleted data to mass alterations of data
         </ul>
-      </p>
+      </div>
     </VerticalTimelineElement>
   </VerticalTimeline>
 )
