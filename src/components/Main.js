@@ -96,17 +96,6 @@ class Main extends React.Component {
           </p>
           {close}
         </article>
-
-        <article
-          id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <ContactIcons/>
-          {close}
-        </article>
         <article
           id="blog"
           className={`${this.props.article === 'blog' ? 'active' : ''} ${
