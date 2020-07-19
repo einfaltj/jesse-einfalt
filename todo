@@ -1,3 +1,15 @@
+Get Website up and running: 
+1. Resume PDF Download 
+    A. Get it working with file
+    B. See if it work with Mobile device
+2. Work : Refine current job desriptions
+
+
+
+x. Remove Icon on homepage
+
+
+
 Install TestCafe and write some basic E2E Tests
 Add a pre-Commit hook that runs the tests on each commit
 Write simple Github Action that runs the E2E tests on every push 
