@@ -32,7 +32,7 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="resume"
+          id="about"
           className={`${this.props.article === 'about' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
@@ -70,7 +70,22 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work Experience</h2>
+          <div style={{ paddingBottom: '60px' }}>
+            <div style={{ float: 'left' }}>
+              <h2 className="major">Work Experience</h2>
+            </div>
+            <div style={{ float: 'right' }}>
+              <a
+                href="https://drive.google.com/file/d/1xgqHlLsALt-eUpqQpUN_7m-lyComdMxi/view?usp=sharing"
+                download="JesseEinfaltResume"
+                target="_blank"
+                className="button"
+                rel="noreferrer"
+              >
+                Download Resume
+              </a>
+            </div>
+          </div>
           <VerticalWorkExperience />
           {close}
         </article>
@@ -88,12 +103,12 @@ class Main extends React.Component {
           </h3>
           <span
             onClick={() => {
-              window.open('/ContinuousIntegration', '_blank');
-              window.focus();
+              window.open('/ContinuousIntegration', '_blank')
+              window.focus()
             }}
             onKeyDown={() => {
-              window.open('/ContinuousIntegration', '_blank');
-              window.focus();
+              window.open('/ContinuousIntegration', '_blank')
+              window.focus()
             }}
             role="button"
             tabIndex={0}
