@@ -5,7 +5,7 @@ const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="content">
       <div className="inner">
-        <h1>Jesse "A Body" Einfalt</h1>
+        <h1>Jesse Einfalt</h1>
         <p>
           Energetic and dependable Software Developer who wants to
           <br />
