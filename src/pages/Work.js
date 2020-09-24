@@ -46,8 +46,11 @@ const mobileVersion = (
 
 const WorkPage = () => {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 532px)' })
+  const isTabletOrMobileDevice = useMediaQuery({
+    query: '(max-device-width: 1224px)',
+  })
 
-  if (isTabletOrMobile) {
+  if (isTabletOrMobile || isTabletOrMobileDevice) {
     return mobileVersion
   } else {
     return desktopVersion
