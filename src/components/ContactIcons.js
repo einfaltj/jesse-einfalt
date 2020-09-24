@@ -35,7 +35,7 @@ const ContactIcons = () => (
       </li>
       <li>
         <a
-          href="mailto:einfaltj88@gmail.com"
+          href="mailto:einfaltj88%40gmail.com"
           className="icon fa-envelope"
           target="_blank"
           rel="noreferrer"
