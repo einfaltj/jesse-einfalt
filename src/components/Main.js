@@ -14,6 +14,7 @@ class Main extends React.Component {
   render() {
     let close = (
       <div
+        aria-label="Close Button"
         className="close"
         onClick={() => {
           this.props.onCloseArticle()
