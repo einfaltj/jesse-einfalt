@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import ContactIcons from '../components/ContactIcons'
 
 let JamieAge = getAge('2017/07/01');
@@ -16,7 +16,7 @@ function getAge(dateString) {
 }
 
 const AboutPage = () => (
-  <Fragment>
+  <>
     <h2 className="major">10 Things About Jesse</h2>
     <span className="image main">{/* <img src={pic01} alt="" /> */}</span>
     <div>
@@ -65,7 +65,7 @@ const AboutPage = () => (
       </p>
       <ContactIcons />
     </div>
-  </Fragment>
+  </>
 )
 
 export default AboutPage

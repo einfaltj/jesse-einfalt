@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import VerticalWorkExperience from '../components/VerticalWorkExperience'
 
 const WorkPage = () => (
-  <Fragment>
+  <>
     <div style={{ paddingBottom: '60px' }}>
       <div style={{ float: 'left' }}>
         <h2 className="major">Work Experience</h2>
@@ -20,7 +20,7 @@ const WorkPage = () => (
       </div>
     </div>
     <VerticalWorkExperience />
-  </Fragment>
+  </>
 )
 
 export default WorkPage
