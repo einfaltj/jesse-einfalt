@@ -4,7 +4,7 @@
 Built using Gatsby, Netlify and tested using Testcafe
 
 ## Live Website
-https://gatsby-dimension.surge.sh/
+https://jeinfalt.com/
 
 ## Installation
 Run `gatsby develop` in the terminal to start the dev site.
