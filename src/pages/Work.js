@@ -3,12 +3,13 @@ import VerticalWorkExperience from '../components/VerticalWorkExperience'
 import { useMediaQuery } from 'react-responsive'
 
 const desktopVersion = (
-  <>
-    <div style={{ paddingBottom: '60px' }}>
+  <div id="work">
+    <div style={{ paddingBottom: '1 em' }}>
       <div style={{ float: 'left' }}>
         <h2 className="major">Work Experience</h2>
       </div>
       <div style={{ float: 'right' }}>
+      {/* <div className="body"> */}
         <a
           href="https://drive.google.com/file/d/1xgqHlLsALt-eUpqQpUN_7m-lyComdMxi/view?usp=sharing"
           download="JesseEinfaltResume"
@@ -21,14 +22,16 @@ const desktopVersion = (
       </div>
     </div>
     <VerticalWorkExperience />
-  </>
+  </div>
 )
 
 const mobileVersion = (
-  <>
+  <div>
     <div style={{ paddingBottom: '30px' }}>
-      <div>
+      <div style={{ float: 'none' }}>
         <h2 className="major">Work Experience</h2>
+      </div>
+      <div style={{ float: 'none' }}>
         <a
           href="https://drive.google.com/file/d/1xgqHlLsALt-eUpqQpUN_7m-lyComdMxi/view?usp=sharing"
           download="JesseEinfaltResume"
@@ -41,21 +44,30 @@ const mobileVersion = (
       </div>
     </div>
     <VerticalWorkExperience />
-  </>
+  </div>
 )
 
 const WorkPage = () => {
-  const isMobileBreakPoint = '532px'
-  const isTabletOrMobile = useMediaQuery({ query: `(max-width: ${isMobileBreakPoint})` })
-  const isTabletOrMobileDevice = useMediaQuery({
-    query: `(max-device-width: ${isMobileBreakPoint})`,
-  })
+  // const [hasMounted, setHasMounted] = React.useState(false)
 
-  if (isTabletOrMobile || isTabletOrMobileDevice) {
-    return mobileVersion
-  } else {
-    return desktopVersion
-  }
+  // React.useEffect(() => {
+  //   setHasMounted(true)
+  // }, [])
+
+  // if (hasMounted) {
+  //   const isMobile = useMediaQuery({ maxWidth: 767 })
+  //   console.log(isMobile, 'Is Mobile')
+
+  //   if (isMobile) {
+  //     console.log('HERE?')
+  //     return mobileVersion
+  //   }
+
+  //   return desktopVersion
+  // }
+
+  console.log('HERE AS WELL??????')
+  return desktopVersion
 }
 
 export default WorkPage
