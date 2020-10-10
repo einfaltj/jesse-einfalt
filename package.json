@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-dimension-v2",
-  "description": "Gatsby Starter - Dimension V2",
+  "name": "jesseeinfaltwebsite",
+  "description": "Jesse Einfalt/'s Personal Website",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Jesse Einfalt",
   "dependencies": {
     "gatsby": "^2.24.64",
     "gatsby-cli": "^2.12.100",
@@ -13,7 +13,6 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
-    "react-responsive": "^8.1.0",
     "react-vertical-timeline-component": "^2.6.2"
   },
   "keywords": [
