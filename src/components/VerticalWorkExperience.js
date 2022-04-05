@@ -28,7 +28,7 @@ const VerticalWorkExperience = () => (
       className="vertical-timeline-element--work"
       contentStyle={finalContentStyle}
       contentArrowStyle={finalArrowStyle}
-      date="09/2019 - Present"
+      date="07/2021 - Present"
       iconStyle={finalIconStyle}
       icon={<WorkIcon />}
     >
