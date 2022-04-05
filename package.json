@@ -1,19 +1,19 @@
 {
   "name": "jesseeinfaltwebsite",
   "description": "Jesse Einfalt/'s Personal Website",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Jesse Einfalt",
   "dependencies": {
-    "gatsby": "^2.24.64",
-    "gatsby-cli": "^2.12.100",
-    "gatsby-plugin-manifest": "^2.2.38",
-    "gatsby-plugin-react-helmet": "^3.1.21",
-    "gatsby-plugin-sass": "^2.1.27",
-    "node-sass": "^4.13.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1",
-    "react-vertical-timeline-component": "^2.6.2"
+    "gatsby": "^4.11.2",
+    "gatsby-cli": "^4.11.2",
+    "gatsby-plugin-manifest": "^4.11.1",
+    "gatsby-plugin-react-helmet": "^5.11.0",
+    "gatsby-plugin-sass": "^5.11.1",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-vertical-timeline-component": "^3.5.2"
   },
   "keywords": [
     "gatsby"
