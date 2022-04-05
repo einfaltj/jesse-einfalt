@@ -9,7 +9,7 @@ const mobileVersion = (
       </div>
       <div style={{ float: 'none' }}>
         <a
-          href="https://drive.google.com/file/d/1xgqHlLsALt-eUpqQpUN_7m-lyComdMxi/view?usp=sharing"
+          href="https://drive.google.com/file/d/1fowROgDEawCSHqqBicsLbiwmDnP8-BYy/view?usp=sharing"
           download="JesseEinfaltResume"
           target="_blank"
           className="button"

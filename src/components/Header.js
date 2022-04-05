@@ -7,9 +7,12 @@ const Header = props => (
       <div className="inner">
         <h1>Jesse Einfalt</h1>
         <p>
-          Energetic and dependable Software Developer who wants to&nbsp;
+          Build a team in which the primary tenants of learning, growth, and
+          trust&nbsp;
           <br />
-          continually learn, contribute and build forward-looking software
+          enable them to support other Software Engineering teams&nbsp;
+          <br />
+          to ship Customer Value quickly and with quality
         </p>
       </div>
     </div>

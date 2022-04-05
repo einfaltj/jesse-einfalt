@@ -33,30 +33,60 @@ const VerticalWorkExperience = () => (
       icon={<WorkIcon />}
     >
       <h3 className="vertical-timeline-element-title">
-        Software Quality Engineering Manager
+        Senior Software Quality Engineering Manager
       </h3>
-      <h4 style={{ paddingBottom: '16px' }} className="vertical-timeline-element-subtitle">
+      <h4
+        style={{ paddingBottom: '16px' }}
+        className="vertical-timeline-element-subtitle"
+      >
         Quantum Metric, Monument
       </h4>
       <div>
         <ul>
-          &#8226; Stood up E2E test suite which allowed both Developers and
-          Automation Engineers to write tests in Typescript against the UI.
-          Hooked test suite into CI/CD pipeline.
+          &#8226; Grew QA Department from 2 to 14 people to support our
+          ever-growing Engineering teams
         </ul>
         <ul>
-          &#8226; Wrapped critical functionality (IE Login, data aggregation
-          layer) in unit tests
+          &#8226; Architected E2E UI test suite which supports and allows around
+          30 developers to release 10-15 times a day
         </ul>
         <ul>
-          &#8226; Formed QA department which consists of both Automated
-          Engineers and Manual Testers
+          &#8226; Oversaw the following:
+          <ul>&#8226; E2E test suite for our iOS and Android SDKs </ul>
+          <ul>
+            &#8226; Replay & Capture multi-browser E2E test suite primarily
+            responsible for ensuring capturing 1 out of 4 online sessions of ALL
+            online sessions
+          </ul>
+          <ul>
+            &#8226; Load testing our ingestion services to simulate load of up
+            to 3 million concurrent sessions an hour per client
+          </ul>
         </ul>
         <ul>
-          &#8226; Worked with Colorado College, Flatiron and General Assemblies
-          to form internship opportunities within the Manual Testing role.
+          &#8226; Created Engineering’s first Internship program which has seen
+          interns hired into full time roles across QA, Delivery Engineering,
+          Data Science, and Production Support at an 88% success rate
         </ul>
       </div>
+    </VerticalTimelineElement>
+    <VerticalTimelineElement
+      className="vertical-timeline-element--work"
+      contentStyle={finalContentStyle}
+      contentArrowStyle={finalArrowStyle}
+      date="09/2019 - 07/2021"
+      iconStyle={finalIconStyle}
+      icon={<WorkIcon />}
+    >
+      <h3 className="vertical-timeline-element-title">
+        Software Quality Engineering Manager
+      </h3>
+      <h4
+        style={{ paddingBottom: '16px' }}
+        className="vertical-timeline-element-subtitle"
+      >
+        Quantum Metric, Monument
+      </h4>
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
@@ -67,7 +97,10 @@ const VerticalWorkExperience = () => (
       icon={<WorkIcon />}
     >
       <h3 className="vertical-timeline-element-title">Software Developer</h3>
-      <h4 style={{ paddingBottom: '16px' }} className="vertical-timeline-element-subtitle">
+      <h4
+        style={{ paddingBottom: '16px' }}
+        className="vertical-timeline-element-subtitle"
+      >
         Church Community Builder, Colorado Springs
       </h4>
       <div>
@@ -101,7 +134,10 @@ const VerticalWorkExperience = () => (
       <h3 className="vertical-timeline-element-title">
         Test Automation Developer
       </h3>
-      <h4 style={{ paddingBottom: '16px' }} className="vertical-timeline-element-subtitle">
+      <h4
+        style={{ paddingBottom: '16px' }}
+        className="vertical-timeline-element-subtitle"
+      >
         Church Community Builder, Colorado Springs
       </h4>
       <div>
@@ -128,7 +164,10 @@ const VerticalWorkExperience = () => (
       icon={<WorkIcon />}
     >
       <h3 className="vertical-timeline-element-title">Product Owner</h3>
-      <h4 style={{ paddingBottom: '16px' }} className="vertical-timeline-element-subtitle">
+      <h4
+        style={{ paddingBottom: '16px' }}
+        className="vertical-timeline-element-subtitle"
+      >
         Church Community Builder, Colorado Springs
       </h4>
       <div>
@@ -154,7 +193,10 @@ const VerticalWorkExperience = () => (
       <h3 className="vertical-timeline-element-title">
         Tier III Technical Support
       </h3>
-      <h4 style={{ paddingBottom: '16px' }} className="vertical-timeline-element-subtitle">
+      <h4
+        style={{ paddingBottom: '16px' }}
+        className="vertical-timeline-element-subtitle"
+      >
         Church Community Builder, Colorado Springs
       </h4>
       <div>
