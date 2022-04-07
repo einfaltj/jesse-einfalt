@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import continousIntegrationImage from '../images/continous_integration.jpeg'
-import ContinuousIntegration from '../blogs/continuousIntegration'
+import continuosIntegrationImage from '../images/continuous_integration.jpeg'
 import WorkPage from '../pages/Work'
 import AboutPage from '../pages/About'
+import BlogPreview from './blog/BlogPreview'
 
 class Main extends React.Component {
   async openBlogArticle() {
@@ -63,24 +63,16 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Blog</h2>
-          <h3>
-            From Release-All-Nighters to Continuous Integration — A True Story
-          </h3>
-          <span
-            onClick={() => {
-              window.open('/ContinuousIntegration', '_blank')
-              window.focus()
-            }}
-            onKeyDown={() => {
-              window.open('/ContinuousIntegration', '_blank')
-              window.focus()
-            }}
-            role="button"
-            tabIndex={0}
-            className="image main"
-          >
-            <img src={continousIntegrationImage} alt="" />
-          </span>
+          <BlogPreview
+            blogTitle="From Release-All-Nighters to Continuous Integration — A True Story"
+            blogRoute="/blog/ContinuousIntegration"
+            blogImageSrc={continuosIntegrationImage}
+          />
+          {/* <BlogPreview
+            blogTitle="From Release-All-Nighters to Continuous Integration — A True Story"
+            blogRoute="/blog/ContinuousIntegration"
+            blogImageSrc={continuosIntegrationImage}
+          /> */}
           {close}
         </article>
         <article
@@ -90,7 +82,6 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <ContinuousIntegration />
         </article>
       </div>
     )

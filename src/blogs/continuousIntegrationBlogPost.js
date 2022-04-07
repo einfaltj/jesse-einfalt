@@ -1,16 +1,16 @@
 import React from 'react'
 
-import continousIntegrationImage from '../images/continous_integration.jpeg'
+import continuousIntegrationImage from '../images/continuous_integration.jpeg'
 import Layout from '../components/layout'
 import BackLinkWebsite from '../components/BackLinkWebsite'
 
-const ContinuousIntegration = () => (
+const ContinuousIntegrationBlogPost = () => (
   <Layout>
     <BackLinkWebsite/>
     <h2>From Release-All-Nighters to Continuous Integration</h2>
     <h2>— A True Story</h2>
     <span className="image main">
-      <img src={continousIntegrationImage} alt="" />
+      <img src={continuousIntegrationImage} alt="" />
     </span>
     <p>
       “Oh, you aren’t doing CI?”
@@ -180,4 +180,4 @@ const ContinuousIntegration = () => (
   </Layout>
 )
 
-export default ContinuousIntegration
+export default ContinuousIntegrationBlogPost
