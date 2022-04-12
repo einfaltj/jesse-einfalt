@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import continuosIntegrationImage from '../images/continuous_integration.jpeg'
+import developerToolsImage from '../images/developerTools.jpg'
 import WorkPage from '../pages/Work'
 import AboutPage from '../pages/About'
 import BlogPreview from './blog/BlogPreview'
@@ -64,15 +65,15 @@ class Main extends React.Component {
         >
           <h2 className="major">Blog</h2>
           <BlogPreview
+            blogTitle="My MUST HAVE developer tools"
+            blogRoute="/blog/DeveloperTools"
+            blogImageSrc={developerToolsImage}
+          />
+          <BlogPreview
             blogTitle="From Release-All-Nighters to Continuous Integration — A True Story"
             blogRoute="/blog/ContinuousIntegration"
             blogImageSrc={continuosIntegrationImage}
           />
-          {/* <BlogPreview
-            blogTitle="From Release-All-Nighters to Continuous Integration — A True Story"
-            blogRoute="/blog/ContinuousIntegration"
-            blogImageSrc={continuosIntegrationImage}
-          /> */}
           {close}
         </article>
         <article
