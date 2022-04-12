@@ -1,6 +1,7 @@
 import React from 'react'
 
 import developerToolsImage from '../images/developerTools.jpg'
+import cliDemo from '../images/CLI_Demo.gif'
 import Layout from '../components/layout'
 import BackLinkWebsite from '../components/BackLinkWebsite'
 
@@ -44,11 +45,14 @@ const DeveloperToolsBlogPost = () => (
     </p>
     <ul>
       <li>
-        {' '}
-        &#8226; VSCode
-        {
-          // Need Link/Logo? 
-        }
+        &#8226;{' '}
+        <a
+          href="https://code.visualstudio.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          VSCode:
+        </a>
         <ul>
           <li>
             So before you get all judgey-pants on me, hear me out. I’ve tried
@@ -77,7 +81,7 @@ const DeveloperToolsBlogPost = () => (
                   Project Manager:
                 </a>
                 <ul>
-                  &#8226; Do you have multiple code repos that you bounce around
+                  Do you have multiple code repos that you bounce around
                   multiple times a day? Do you have a single mono repo that is
                   GIGANTIC and you wish you could target specific folders? This
                   is the extension for you. A simple JSON Config object to map
@@ -95,11 +99,11 @@ const DeveloperToolsBlogPost = () => (
                   Prettier:
                 </a>
                 <ul>
-                  &#8226; If you aren’t using Prettier, USE IT! If you are using
-                  it but don’t have it integrated into your IDE, oh man… This
-                  will save you so much time. I personally don’t like it to
-                  pretty things on save; however, being able to use `cmd +
-                  control + f` to format files is a breeze.{' '}
+                  If you aren’t using Prettier, USE IT! If you are using it but
+                  don’t have it integrated into your IDE, oh man… This will save
+                  you so much time. I personally don’t like it to pretty things
+                  on save; however, being able to use `cmd + control + f` to
+                  format files is a breeze.{' '}
                 </ul>
               </li>
               <li>
@@ -112,8 +116,8 @@ const DeveloperToolsBlogPost = () => (
                   GitLens:
                 </a>
                 <ul>
-                  &#8226; When I’m tracking down a recent regression in my code
-                  base at work, GitLens is my GO TO tool to find areas that were
+                  When I’m tracking down a recent regression in my code base at
+                  work, GitLens is my GO TO tool to find areas that were
                   recently changed in order to zero in on the root cause. The
                   simply UI to see every line of code tied to a git commit,
                   message and history is invaluable!{' '}
@@ -129,16 +133,119 @@ const DeveloperToolsBlogPost = () => (
                   Code Spell Checker:
                 </a>
                 <ul>
-                  &#8226; This is a relatively new one in my extension list. I
-                  one day saw a pretty egregious spelling mistake in some client
-                  facing code and thought “Who was the bone head who typed
-                  that?” Using GitLens, I saw that I was said bone head…
-                  wonderful. 5 seconds later I had this spell checker up and
-                  running to prevent that type of error from happening again.{' '}
+                  This is a relatively new one in my extension list. I one day
+                  saw a pretty egregious spelling mistake in some client facing
+                  code and thought “Who was the bone head who typed that?” Using
+                  GitLens, I saw that I was said bone head… wonderful. 5 seconds
+                  later I had this spell checker up and running to prevent that
+                  type of error from happening again.{' '}
                 </ul>
               </li>
             </ul>
           </li>
+        </ul>
+      </li>
+      <li>
+        &#8226;{' '}
+        <a href="https://ohmyz.sh/" target="_blank" rel="noreferrer">
+          Oh-my-zsh:
+        </a>
+        <ul>
+          To be fair, I really don’t have too much experience in shell script
+          tools OTHER than oh-my-zsh. Reasoning being I had a Sr. Dev show me
+          their terminal once and I was like, “OOOOOOOOOOOO WHAT IS THAT???” And
+          I was hooked. But who doesn’t LOVE seeing in your terminal what repo,
+          branch and if you have any changes at a glance? If you are curious, my
+          theme for the last 5 years is{' '}
+          <a
+            href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#agnoster"
+            target="_blank"
+            rel="noreferrer"
+          >
+            agnoster
+          </a>
+          .
+          <br />
+          <br />
+          The following 2 recommendations are plugins that require oh my zsh (if
+          you needed any further convincing 😉):
+          <li>
+            &#8226;{' '}
+            <a
+              href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/jump"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Jump:
+            </a>
+            <ul>
+              Allows you to type "j partial_directory_name" and it will "jump"
+              to that directory. Now, you have to manually cd there the first
+              time, but as your history builds, it gets smarter. Great for
+              managing multiple projects from the command line.
+            </ul>
+          </li>
+          <li>
+            &#8226;{' '}
+            <a
+              href="https://github.com/zsh-users/zsh-autosuggestions"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Autocomplete:
+            </a>
+            <ul>
+              This allows you to tab to complete based off your terminal
+              history. Install/Demo here:{' '}
+              <a
+                href="https://asciinema.org/a/37390"
+                target="_blank"
+                rel="noreferrer"
+              >
+                https://asciinema.org/a/37390
+              </a>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        &#8226;{' '}
+        <a href="https://github.com/jonas/tig" target="_blank" rel="noreferrer">
+          Tig:
+        </a>
+        <ul>
+          I think one of the most overlooked thing about Git is that you really
+          can understand SO MUCH MORE about your repo’s history if you can
+          visualize it. Tig is a great CLI tool that does just this without
+          having to pay for some GUI Git handler. This is hands DOWN my most
+          used tool day to day to inspect git history. It also has vim usage
+          built in so it makes it SUUUUPER easy to search for a commit message
+          and inspect that commit.
+        </ul>
+      </li>
+      <li>
+        Quick Demo of using all the CLI tools together:
+        <span className="image main">
+          <img src={cliDemo} alt="" />
+        </span>
+      </li>
+      <li>
+        &#8226;{' '}
+        <a
+          href="https://apps.apple.com/us/app/magnet/id441258766?mt=12"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Magnet:
+        </a>
+        <ul>
+          So I have a bad habit of needing 3 monitors; however, even if you only
+          run with a single monitor setup, having some sorta window management
+          tool will literally save you minutes every day. I spend about 30
+          seconds every morning booting up my computer and then setting my
+          monitor workspaces using Magnet. A task that took easily 5 minutes
+          manually dragging and re-sizing in the days before I even knew tools
+          like this existed.
         </ul>
       </li>
     </ul>
