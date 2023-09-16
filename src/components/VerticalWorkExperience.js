@@ -5,7 +5,7 @@ import {
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 import WorkIcon from './icons/WorkIcon'
-import VerticalTimelineElementBulletPoint from './VerticalWorkComponents/VerticalTimelineElementBulletpoint'
+import VerticalTimelineElementBulletPoint from './VerticalWorkComponents/VerticalTimelineElementBulletPoint'
 
 const finalIconStyle = {
   background: 'rgb(27, 31, 34)',
