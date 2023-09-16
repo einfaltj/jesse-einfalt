@@ -7,12 +7,13 @@ const Header = props => (
       <div className="inner">
         <h1>Jesse Einfalt</h1>
         <p>
-          Build a team in which the primary tenants of learning, growth, and
-          trust&nbsp;
-          <br />
-          enable them to support other Software Engineering teams&nbsp;
-          <br />
-          to ship Customer Value quickly and with quality
+          Results-driven engineer with over 8 years of experience in leading
+          high-performance engineering teams and delivering impactful projects.
+          <br/>
+          Proven track record in optimizing development processes, increasing
+          efficiency, and fostering innovation. 
+          <br/>
+          Adept at managing cross-functional collaborations and driving continuous improvement.
         </p>
       </div>
     </div>
