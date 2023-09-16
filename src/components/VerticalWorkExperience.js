@@ -5,6 +5,7 @@ import {
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 import WorkIcon from './icons/WorkIcon'
+import VerticalTimelineElementBulletPoint from './VerticalWorkComponents/VerticalTimelineElementBulletpoint'
 
 const finalIconStyle = {
   background: 'rgb(27, 31, 34)',
@@ -28,12 +29,12 @@ const VerticalWorkExperience = () => (
       className="vertical-timeline-element--work"
       contentStyle={finalContentStyle}
       contentArrowStyle={finalArrowStyle}
-      date="07/2021 - Present"
+      date="03/2023 - Present"
       iconStyle={finalIconStyle}
       icon={<WorkIcon />}
     >
       <h3 className="vertical-timeline-element-title">
-        Senior Software Quality Engineering Manager
+        Senior Technical Project Manager
       </h3>
       <h4
         style={{ paddingBottom: '16px' }}
@@ -43,30 +44,65 @@ const VerticalWorkExperience = () => (
       </h4>
       <div>
         <ul>
-          &#8226; Grew QA Department from 2 to 14 people to support our
-          ever-growing Engineering teams
-        </ul>
-        <ul>
-          &#8226; Architected E2E UI test suite which supports and allows around
-          30 developers to release 10-15 times a day
-        </ul>
-        <ul>
-          &#8226; Oversaw the following:
-          <ul>&#8226; E2E test suite for our iOS and Android SDKs </ul>
-          <ul>
-            &#8226; Replay & Capture multi-browser E2E test suite primarily
-            responsible for ensuring capturing 1 out of 4 online sessions of ALL
-            online sessions
-          </ul>
-          <ul>
-            &#8226; Load testing our ingestion services to simulate load of up
-            to 3 million concurrent sessions an hour per client
-          </ul>
-        </ul>
-        <ul>
-          &#8226; Created Engineering’s first Internship program which has seen
-          interns hired into full time roles across QA, Delivery Engineering,
-          Data Science, and Production Support at an 88% success rate
+          <li>
+            <h4>
+              &#8226; <b>Key Technical Contributions:</b>
+            </h4>
+            <ul>
+              <VerticalTimelineElementBulletPoint
+                title="Technical Projects"
+                description="Led projects including Atlas Rollout, DBv3
+                Reports, Guide Alerts, and Page Title enhancements which spanned
+                all disciplines of engineering"
+              />
+              <VerticalTimelineElementBulletPoint
+                title="Individual Achievements"
+                description="Rebuilt table replay functionality, improved date picker, added industry picker and enable/disable retail based metrics"
+              />
+              <VerticalTimelineElementBulletPoint
+                title="UI Optimizations"
+                description="Decreased UI and worker bundle size by tree shaking Lodash usage and reducing the codebase footprint"
+              />
+              <VerticalTimelineElementBulletPoint
+                title="Package Cleanup"
+                description="Reduced npm install time by 1:30 by pruning, cleaning and refactoring dependencies"
+              />
+              <VerticalTimelineElementBulletPoint
+                title="Code Standards"
+                description="Ensured code standards were automatically enforced across the entire UI codebase"
+              />
+            </ul>
+          </li>
+          <li>
+            <h4>
+              &#8226; <b>Strategic Impact:</b>
+            </h4>
+            <ul>
+              <VerticalTimelineElementBulletPoint
+                title="CI/CD Optimizations"
+                description="Identified a time savings of 6 minutes per pipeline through parallelizing jobs"
+              />
+              <VerticalTimelineElementBulletPoint
+                title="Code Ownership"
+                description="Enabled CODEOWNERS file/ownership and defined UI Engineering Process Changes"
+              />
+            </ul>
+          </li>
+          <li>
+            <h4>
+              &#8226; <b>Collaborative Initiatives:</b>
+            </h4>
+            <ul>
+              <VerticalTimelineElementBulletPoint
+                title="HackWeek Facilitation"
+                description="Orchestrated Quantum Metric's 2nd HackWeek, actively contributing to multiple projects"
+              />
+              <VerticalTimelineElementBulletPoint
+                title="Weekly Engineering Insights"
+                description="Worked with EMs on creating a Weekly Engineering Update meeting and document to highlight all inflight work for our 55+ person Engineering Team"
+              />
+            </ul>
+          </li>
         </ul>
       </div>
     </VerticalTimelineElement>
@@ -74,11 +110,14 @@ const VerticalWorkExperience = () => (
       className="vertical-timeline-element--work"
       contentStyle={finalContentStyle}
       contentArrowStyle={finalArrowStyle}
-      date="09/2019 - 07/2021"
+      date="09/2019 - 03/2023"
       iconStyle={finalIconStyle}
       icon={<WorkIcon />}
     >
       <h3 className="vertical-timeline-element-title">
+        Senior Software Quality Engineering Manager
+        <br />
+        <br />
         Software Quality Engineering Manager
       </h3>
       <h4
@@ -87,6 +126,30 @@ const VerticalWorkExperience = () => (
       >
         Quantum Metric, Monument
       </h4>
+      <div>
+        <ul>
+          <VerticalTimelineElementBulletPoint
+            title="Team Leadership"
+            description="Grew the QA department from 2 to 14 team members to support the expanding Engineering teams"
+          />
+          <VerticalTimelineElementBulletPoint
+            title="Test Suite Architecture"
+            description="Designed an E2E UI test suite enabling 30 developers to release 10-20 times a day"
+          />
+          <VerticalTimelineElementBulletPoint
+            title="Testing Across Platforms"
+            description="Managed E2E test suites for Web Capture, iOS and Android SDKs, and Platform Services"
+          />
+          <VerticalTimelineElementBulletPoint
+            title="Load Testing"
+            description="Orchestrated load testing for ingestion services, simulating up to 3 million concurrent sessions an hour per client"
+          />
+          <VerticalTimelineElementBulletPoint
+            title="Internship Program"
+            description="Pioneered Engineering's first Internship program, resulting in an 88% conversion rate of interns to full-time hires across various departments"
+          />
+        </ul>
+      </div>
     </VerticalTimelineElement>
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
@@ -105,21 +168,22 @@ const VerticalWorkExperience = () => (
       </h4>
       <div>
         <ul>
-          &#8226; Software team lead of 9 developers integrating a new payment
-          platform which will process 100s of millions in payments per year
-        </ul>
-        <ul>
-          &#8226; Developing large CRM suite in React and React-Native with a
-          RESTful API built on PHP and MySQL
-        </ul>
-        <ul>
-          &#8226; Became the owner of company's Test Suite to ensure
-          reliability, speed and coverage
-        </ul>
-        <ul>
-          &#8226; Implemented Behat/Mink end to end tests to replace legacy E2E
-          suite. This enabled PM team to have insight into test coverage using
-          business language gherkin
+          <VerticalTimelineElementBulletPoint
+            title="Leadership"
+            description="Led a team of 9 developers in integrating a new payment platform, processing hundreds of millions in payments annually"
+          />
+          <VerticalTimelineElementBulletPoint
+            title="Technology Stack"
+            description="Developed a CRM suite in React and React-Native, supported by a RESTful API built on PHP and MySQL"
+          />
+          <VerticalTimelineElementBulletPoint
+            title="Test Suite Ownership"
+            description="Assumed ownership of the company's Test Suite, ensuring reliability, speed, and coverage"
+          />
+          <VerticalTimelineElementBulletPoint
+            title="Testing Transformation"
+            description="Implemented Behat/Mink end-to-end tests to replace legacy suites, improving test coverage and facilitating communication with the PM team"
+          />
         </ul>
       </div>
     </VerticalTimelineElement>
@@ -142,16 +206,18 @@ const VerticalWorkExperience = () => (
       </h4>
       <div>
         <ul>
-          &#8226; Primary automated tester for the mobile team which included
-          iOS and Android apps
-        </ul>
-        <ul>
-          &#8226; Wrote automated tests, manually tested and shipped responsive
-          forms with payments which now process over 2 million dollars weekly
-        </ul>
-        <ul>
-          &#8226; Wrote Behat integration tests for server side code and
-          Cucumber end to end tests for the client side code
+          <VerticalTimelineElementBulletPoint
+            title="Mobile Testing"
+            description="Served as the primary automated tester for the mobile team, covering iOS and Android apps"
+          />
+          <VerticalTimelineElementBulletPoint
+            title="Payment Processing"
+            description="Authored automated tests and manually tested responsive forms with payments, processing over $2 million weekly"
+          />
+          <VerticalTimelineElementBulletPoint
+            title="Test Automation"
+            description="Developed Behat integration tests for server-side code and Cucumber end-to-end tests for client-side code"
+          />
         </ul>
       </div>
     </VerticalTimelineElement>
@@ -163,7 +229,9 @@ const VerticalWorkExperience = () => (
       iconStyle={finalIconStyle}
       icon={<WorkIcon />}
     >
-      <h3 className="vertical-timeline-element-title">Product Owner</h3>
+      <h3 className="vertical-timeline-element-title">
+        Product Owner / Scrum Master
+      </h3>
       <h4
         style={{ paddingBottom: '16px' }}
         className="vertical-timeline-element-subtitle"
@@ -171,15 +239,20 @@ const VerticalWorkExperience = () => (
         Church Community Builder, Colorado Springs
       </h4>
       <div>
-        <ul>&#8226; Managed the Give Team as the Product Owner/Scrum Master</ul>
         <ul>
-          &#8226; Primary project manager when CCB became PCI Level 1 compliant
+          <VerticalTimelineElementBulletPoint
+            title="Compliance Achievement"
+            description="Led the transition to PCI Level 1 compliance"
+          />
+          <VerticalTimelineElementBulletPoint
+            title="Integration Success"
+            description="Oversaw the successful integration of CCB's 2-way merchant integration with Pushpay, serving over 950 active churches"
+          />
+          <VerticalTimelineElementBulletPoint
+            title="Mobile Experience"
+            description="Orchestrated the creation of a new mobile giving experience"
+          />
         </ul>
-        <ul>
-          &#8226; Successfully rolled out CCB's 2-way merchant integration with
-          Pushpay which has over 950 active churches
-        </ul>
-        <ul>&#8226; Oversaw the creation of a new mobile giving experience</ul>
       </div>
     </VerticalTimelineElement>
     <VerticalTimelineElement
@@ -201,17 +274,18 @@ const VerticalWorkExperience = () => (
       </h4>
       <div>
         <ul>
-          &#8226; Triaged API integration, financial, and bug case issues for
-          both churches and preferred vendors
-        </ul>
-        <ul>
-          &#8226;As software bugs were found, worked with developers to create
-          bug cases and inquiries that were easy to reproduce and then helped in
-          the prioritization of those bugs
-        </ul>
-        <ul>
-          &#8226; Performed data services for churches that ranged from
-          recovering accidentally deleted data to mass alterations of data
+          <VerticalTimelineElementBulletPoint
+            title="Issue Triage"
+            description="Assessed API integration, financial, and bug case issues for churches and preferred vendors"
+          />
+          <VerticalTimelineElementBulletPoint
+            title="Collaboration"
+            description="Worked closely with developers to create and prioritize bug cases and inquiries"
+          />
+          <VerticalTimelineElementBulletPoint
+            title="Data Services"
+            description="Provided data services for churches, including data recovery and mass data alterations"
+          />
         </ul>
       </div>
     </VerticalTimelineElement>
